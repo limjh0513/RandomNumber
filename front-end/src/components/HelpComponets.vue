@@ -58,7 +58,9 @@
           저장은 현재 브라우저의 로컬 스토리지라는 곳에<br />저장이 됩니다. 사용
           중이던 브라우저를<br />삭제하거나 초기화하면 저장된 데이터는<br />
           모두 삭제됩니다. 또, 다른 브라우저를<br />
-          사용하면 저장했던 데이터가 보이지 않습니다.
+          사용하면 저장했던 데이터가 보이지 않습니다.<br />
+          맨 밑에 모두 삭제 버튼을 클릭하면<br />
+          모든 데이터가 삭제됩니다.
         </div>
       </div>
     </div>
@@ -78,7 +80,7 @@
       /></a>
       <a
         class="helpView_contact_mail"
-        href="https://github.com/limjh0513"
+        href="mailto:ljh040513@naver.com"
         target="_blank"
         ><img
           src="../../public/image/gmail.png"
@@ -89,7 +91,7 @@
 
       <a
         class="helpView_contact_facebook"
-        href="https://github.com/limjh0513"
+        href="https://www.facebook.com/profile.php?id=100016279240376"
         target="_blank"
         ><img
           src="../../public/image/messenger.png"

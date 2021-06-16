@@ -76,6 +76,14 @@ export default {
       for (let key of this.saveItems) {
         localStorage.removeItem(key[4]);
       }
+
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "모든 데이터 삭제를 완료했습니다...",
+        showConfirmButton: false,
+        timer: 1000,
+      });
       this.saveItemExist();
     },
 
