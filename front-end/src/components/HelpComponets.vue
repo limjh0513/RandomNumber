@@ -70,7 +70,7 @@
       </div>
       <a
         class="helpView_contact_github"
-        href="https://github.com/limjh0513"
+        href="https://github.com/limjh0513/RandomNumber"
         target="_blank"
         ><img
           src="../../public/image/github.png"

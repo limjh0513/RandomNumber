@@ -46,7 +46,7 @@ export default {
   created() {
     if (localStorage.length > 0) {
       for (let i = 0; i < localStorage.length; i++) {
-        if (localStorage.key(i).startsWith("todo-")) {
+        if (localStorage.key(i).startsWith("save-")) {
           var data = JSON.parse(localStorage.getItem(localStorage.key(i)));
           data[4] = localStorage.key(i);
           this.saveItems.push(data);
@@ -57,8 +57,8 @@ export default {
     this.saveItemExist();
   },
   methods: {
-    deleteData(todoItem, index) {
-      localStorage.removeItem(todoItem[4]);
+    deleteData(saveItem, index) {
+      localStorage.removeItem(saveItem[4]);
       this.saveItems.splice(index, 1);
 
       Swal.fire({
@@ -102,7 +102,7 @@ export default {
     saveItemExist() {
       let cnt = 0;
       for (let i = 0; i < localStorage.length; i++) {
-        if (localStorage.key(i).startsWith("todo-")) {
+        if (localStorage.key(i).startsWith("save-")) {
           cnt++;
         }
       }
