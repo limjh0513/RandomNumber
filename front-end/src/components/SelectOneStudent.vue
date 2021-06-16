@@ -106,7 +106,7 @@ export default {
           } else {
             saveTitle = title;
 
-            var saveId = localStorage.length + 1;
+            var saveId = "todo-" + (localStorage.length + 1);
 
             var currentTime = DateTime.now().toFormat("yyyy-MM-dd HH:mm:ss");
             var saveData = [];
