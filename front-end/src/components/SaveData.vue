@@ -94,7 +94,7 @@ export default {
     saveItemExist() {
       let cnt = 0;
       for (let i = 0; i < localStorage.length; i++) {
-        if (localStorage.key(i) !== "loglevel:webpack-dev-server") {
+        if (localStorage.key(i).startsWith("todo-")) {
           cnt++;
         }
       }
