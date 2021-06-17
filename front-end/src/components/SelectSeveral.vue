@@ -32,11 +32,13 @@
             class="selectSeveral_input_inputBox_action_studentInput"
             v-model.number="studentCount"
             type="number"
+            max="10000"
           />
           <input
             class="selectSeveral_input_inputBox_action_selectCountInput"
             v-model.number="announStudents"
             type="number"
+            max="10000"
           />
           <input
             class="selectSeveral_input_inputBox_action_overlapInput"
@@ -73,6 +75,7 @@ export default {
     startTimer(sec) {
       if (sec == 0) {
         this.showWaitTime = false;
+        this.currentWaitTime = "";
       } else {
         this.currentWaitTime = sec;
         setTimeout(() => {
@@ -81,11 +84,6 @@ export default {
       }
     },
     selectOnClick() {
-      this.selected = "";
-      var selectServeral = []; //값을 넣을 변수
-      var index = 0; //현재 배열에 값이 몇개 들어가 있는 지 확인
-      var check = true; // 배열 내에 같은 값이 있는 지 확인
-
       if (this.studentCount > 0) {
         if (this.studentCount > 10000) {
           Swal.fire(
@@ -94,46 +92,52 @@ export default {
             "error"
           );
         } else {
-          if (!this.overlapChecked) {
-            if (this.studentCount < this.announStudents) {
-              Swal.fire(
-                "이 창이 떴나요?",
-                "발표할 학생 수가 전체 학생 수보다 작을 때, 번호를 뽑지 못합니다. 발표할 학생 수가 전체 학생 수보다 작게 입력해주세요.",
-                "question"
-              );
+          if (this.currentWaitTime === "") {
+            this.selected = "";
+            var selectServeral = []; //값을 넣을 변수
+            var index = 0; //현재 배열에 값이 몇개 들어가 있는 지 확인
+            var check = true; // 배열 내에 같은 값이 있는 지 확인
+            this.studentCount = Math.round(this.studentCount);
+            this.showWaitTime = true;
+            if (!this.overlapChecked) {
+              if (this.studentCount < this.announStudents) {
+                Swal.fire(
+                  "이 창이 떴나요?",
+                  "발표할 학생 수가 전체 학생 수보다 작을 때, 번호를 뽑지 못합니다. 발표할 학생 수가 전체 학생 수보다 작게 입력해주세요.",
+                  "question"
+                );
+              } else {
+                while (index < this.announStudents) {
+                  //발표 시킬 학생 수 만큼
+                  var num1 = parseInt(Math.random() * this.studentCount) + 1; //랜덤으로 1 ~ 번호까지
+                  check = true;
+
+                  for (var i = 0; i < index; i++) {
+                    if (selectServeral[i] == num1) {
+                      check = false; //같은 값이 들어가 있기 때문에 배열에 추가하지 않기 위해 false
+                      break;
+                    }
+                  }
+                  if (check) {
+                    // 확인 후 같은 값이 없다면 배열에 추가
+                    selectServeral[index] = num1;
+                    index++;
+                  }
+                }
+              }
             } else {
               while (index < this.announStudents) {
                 //발표 시킬 학생 수 만큼
-                var num1 = parseInt(Math.random() * this.studentCount) + 1; //랜덤으로 1 ~ 번호까지
-                check = true;
-
-                for (var i = 0; i < index; i++) {
-                  if (selectServeral[i] == num1) {
-                    check = false; //같은 값이 들어가 있기 때문에 배열에 추가하지 않기 위해 false
-                    break;
-                  }
-                }
-                if (check) {
-                  // 확인 후 같은 값이 없다면 배열에 추가
-                  selectServeral[index] = num1;
-                  index++;
-                }
+                var num2 = parseInt(Math.random() * this.studentCount) + 1; //랜덤으로 1 ~ 번호까지
+                selectServeral[index] = num2;
+                index++;
               }
             }
-          } else {
-            while (index < this.announStudents) {
-              //발표 시킬 학생 수 만큼
-              var num2 = parseInt(Math.random() * this.studentCount) + 1; //랜덤으로 1 ~ 번호까지
-              selectServeral[index] = num2;
-              index++;
+            this.startTimer(3);
+
+            for (var k = 0; k < index; k++) {
+              this.selected += selectServeral[k] + " ";
             }
-          }
-
-          this.showWaitTime = true;
-          this.startTimer(3);
-
-          for (var k = 0; k < index; k++) {
-            this.selected += selectServeral[k] + " ";
           }
         }
       } else {
@@ -366,7 +370,7 @@ export default {
           line-height: 58px;
           text-align: center;
 
-          color: #000000;
+          color: #ffffff;
         }
       }
     }

@@ -24,6 +24,7 @@
             class="selectOne_input_inputBox_action_studentInput"
             v-model="studentCount"
             type="number"
+            max="1000000"
           />
           <Button
             class="selectOne_input_inputBox_action_button"
@@ -52,6 +53,7 @@ export default {
     startTimer(sec) {
       if (sec == 0) {
         this.showWaitTime = false;
+        this.currentWaitTime = "";
       } else {
         this.currentWaitTime = sec;
         setTimeout(() => {
@@ -61,9 +63,19 @@ export default {
     },
     selectOnClick() {
       if (this.studentCount > 0) {
-        this.selected = parseInt(Math.random() * this.studentCount) + 1; //랜덤으로 번호 뽑기
-        this.showWaitTime = true; //기다리는 시간 보여주기
-        this.startTimer(3);
+        if (this.studentCount > 1000000) {
+          Swal.fire(
+            "학생 수가 너무 커요",
+            "학생 수가 너무 큽니다. 1000000 이하의 수까지 입력해주세요",
+            "error"
+          );
+        } else {
+          if (this.currentWaitTime === "") {
+            this.selected = parseInt(Math.random() * this.studentCount) + 1; //랜덤으로 번호 뽑기
+            this.showWaitTime = true; //기다리는 시간 보여주기
+            this.startTimer(3);
+          }
+        }
       } else {
         Swal.fire(
           "학생 수가 0보다 커야 해요",
@@ -233,7 +245,7 @@ export default {
           line-height: 58px;
           text-align: center;
 
-          color: #000000;
+          color: #ffffff;
 
           margin-left: 700px;
         }

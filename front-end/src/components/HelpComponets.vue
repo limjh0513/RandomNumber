@@ -22,8 +22,9 @@
         </div>
         <div class="helpView_contents_oneStudent_contents">
           학생 수 만큼 숫자를 입력하고 시작 버튼을<br />
-          누르면 랜덤으로 번호가 생성되어<br />
-          번호 1개가 보여집니다.
+          누르면 무작위로 번호가 생성되어<br />
+          번호 1개가 보입니다.<br />
+          최대 1000000까지 입력할 수 있습니다.
         </div>
       </div>
       <div class="helpView_contents_severalStudents">
@@ -32,11 +33,11 @@
         </div>
         <div class="helpView_contents_severalStudents_contents">
           학생 수 만큼 숫자를 입력하고 발표할 학생 수를<br />
-          입력한 후 시작 버튼을 누르면 랜덤으로 번호가<br />
-          생성되어 발표할 학생 수 만큼 번호가 보여집니다.<br />
+          입력한 후 시작 버튼을 누르면 무작위로 번호가<br />
+          생성되어 발표할 학생 수 만큼 번호가 보입니다.<br />
           너무 큰 숫자를 입력하면 많은 시간이 소요되기 때문에<br />
           최대 10000까지의 숫자를 뽑을 수 있습니다.<br />
-          번호가 중복되게 하고 싶을 때에는<br />중복 부분에 체크를 해주세요
+          번호가 중복되게 하고 싶을 때는<br />중복 부분에 체크를 해주세요
         </div>
         <div class="helpView_contents_severalStudents_down">밑으로⬇</div>
       </div>
@@ -45,16 +46,17 @@
           번호뽑기
         </div>
         <div class="helpView_contents_number_contents">
-          1명씩, n명씩 번호뽑기는 모두 3초 후 번호를 보여줍니다.<br />
+          1명씩, n명씩 번호 뽑기는 모두 3초 후 번호가 보입니다.<br />
           파란색으로 글자가 3, 2, 1이 보인 후<br />빨간색 글자로 뽑은 번호를
-          보여줍니다.
+          보여줍니다.<br />
+          소수 입력 시 반올림되어 보이게 됩니다.
         </div>
       </div>
       <div class="helpView_contents_saveNumber">
         <div class="helpView_contents_saveNumber_title">저장</div>
         <div class="helpView_contents_saveNumber_contents">
           번호를 뽑은 후 저장 버튼을 클릭하면<br />
-          뽑은 번호를 저장을 할 수 있습니다.<br />
+          뽑은 번호를 저장할 수 있습니다.<br />
           저장은 현재 브라우저의 로컬 스토리지라는 곳에<br />저장이 됩니다. 사용
           중이던 브라우저를<br />삭제하거나 초기화하면 저장된 데이터는<br />
           모두 삭제됩니다. 또, 다른 브라우저를<br />
@@ -71,17 +73,13 @@
       <a
         class="helpView_contact_github"
         href="https://github.com/limjh0513/RandomNumber"
-        target="_blank"
         ><img
           src="../../public/image/github.png"
           width="80px"
           height="80px"
           alt="깃허브 이미지"
       /></a>
-      <a
-        class="helpView_contact_mail"
-        href="mailto:ljh040513@naver.com"
-        target="_blank"
+      <a class="helpView_contact_mail" href="mailto:ljh040513@naver.com"
         ><img
           src="../../public/image/gmail.png"
           width="80px"
@@ -92,7 +90,6 @@
       <a
         class="helpView_contact_facebook"
         href="https://www.facebook.com/profile.php?id=100016279240376"
-        target="_blank"
         ><img
           src="../../public/image/messenger.png"
           width="80px"
