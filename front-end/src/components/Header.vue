@@ -32,22 +32,22 @@ export default {
   width: 100%;
   left: 0px;
   top: 0px;
-  height: 160px;
+  height: 130px;
   display: flex;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   &_logo {
-    margin: 10px 65px 10px 65px;
+    margin: 10px 25px 10px 65px;
   }
 
   &_nav {
     color: #303030;
     display: flex;
-    font-size: 48px;
+    font-size: 30px;
     font-family: "Jua", sans-serif;
     align-items: center;
     div {
-      margin-left: 120px;
+      margin-left: 80px;
     }
   }
 }
@@ -55,5 +55,65 @@ export default {
 a {
   color: inherit;
   text-decoration: none;
+}
+@media (min-width: 1000px) {
+  .header {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    height: 130px;
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &_logo {
+      margin: 10px 25px 10px 65px;
+    }
+
+    &_nav {
+      color: #303030;
+      display: flex;
+      font-size: 32px;
+      font-family: "Jua", sans-serif;
+      align-items: center;
+      div {
+        margin-left: 120px;
+      }
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+@media (min-width: 1101px) {
+  .header {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    height: 160px;
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &_logo {
+      margin: 30px 65px 00px 65px;
+    }
+
+    &_nav {
+      color: #303030;
+      display: flex;
+      font-size: 48px;
+      font-family: "Jua", sans-serif;
+      align-items: center;
+      div {
+        margin-left: 120px;
+      }
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 </style>

@@ -113,128 +113,386 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap"); //font-family: "Sunflower", sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 
-.helpView {
-  &_title {
-    display: flex;
-    font-size: 64px;
-    font-family: "Jua", sans-serif;
-    color: #000000;
-    letter-spacing: 0.3rem;
-    margin: 40px 0px 70px 50px;
-    align-items: center;
-    &_image {
-      padding-top: 15px;
-      margin-left: 5px;
-    }
-    &_guide {
-      font-size: 24px;
-      text-align: center;
-      margin-left: 30px;
-    }
-  }
-  &_contents {
-    &_oneStudent {
+@media (min-width: 100px) {
+  .helpView {
+    &_title {
       display: flex;
-      align-items: center;
-      margin-bottom: 100px;
-      &_title {
-        font-size: 64px;
-        font-family: "Jua", sans-serif;
-        color: #70d9cc;
-        margin-right: 260px;
-        margin-left: 300px;
-      }
-      &_contents {
-        font-size: 36px;
-        font-family: "Jua", sans-serif;
-        color: #000000;
-      }
-    }
-    &_severalStudents {
-      display: flex;
-      align-items: center;
-      margin-bottom: 90px;
-      &_title {
-        font-size: 64px;
-        font-family: "Jua", sans-serif;
-        color: #aab9e3;
-        margin-right: 190px;
-        margin-left: 290px;
-      }
-      &_contents {
-        font-size: 36px;
-        font-family: "Jua", sans-serif;
-        color: #000000;
-      }
-      &_down {
-        font-size: 36px;
-        font-family: "Jua", sans-serif;
-        color: #f6b93b;
-        margin-left: 250px;
-      }
-    }
-    &_number {
-      display: flex;
-      align-items: center;
-      margin-bottom: 100px;
-      &_title {
-        font-size: 64px;
-        font-family: "Jua", sans-serif;
-        color: #ffe695;
-        margin-right: 160px;
-        margin-left: 255px;
-      }
-      &_contents {
-        font-size: 36px;
-        font-family: "Jua", sans-serif;
-        color: #000000;
-      }
-    }
-    &_saveNumber {
-      display: flex;
-      align-items: center;
-      margin-bottom: 124px;
-      &_title {
-        font-size: 64px;
-        font-family: "Jua", sans-serif;
-        color: #78e08f;
-        margin-right: 260px;
-        margin-left: 310px;
-      }
-      &_contents {
-        font-size: 36px;
-        font-family: "Jua", sans-serif;
-        color: #000000;
-      }
-    }
-  }
-
-  &_contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    &_descriptionOne {
-      font-size: 36px;
-      color: #5bc8d3;
+      font-size: 32px;
       font-family: "Jua", sans-serif;
-    }
-    &_github {
-      margin-left: 80px;
-    }
-    &_mail {
-      margin-left: 80px;
-    }
-    &_facebook {
-      margin-left: 80px;
-    }
-
-    &_descriptionTwo {
-      margin-left: 50px;
-      font-size: 36px;
       color: #000000;
+      letter-spacing: 0.3rem;
+      margin: 40px 0px 70px 50px;
+      align-items: center;
+      &_image {
+        padding-top: 15px;
+        margin-left: 5px;
+      }
+      &_guide {
+        font-size: 16px;
+        text-align: center;
+        margin-left: 30px;
+      }
+    }
+    &_contents {
+      &_oneStudent {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+        &_title {
+          font-size: 36px;
+          font-family: "Jua", sans-serif;
+          color: #70d9cc;
+          margin-right: 230px;
+          margin-left: 160px;
+        }
+        &_contents {
+          font-size: 16px;
+          font-family: "Jua", sans-serif;
+          color: #000000;
+        }
+      }
+      &_severalStudents {
+        display: flex;
+        align-items: center;
+        margin-bottom: 90px;
+        &_title {
+          font-size: 32px;
+          font-family: "Jua", sans-serif;
+          color: #aab9e3;
+          margin-right: 200px;
+          margin-left: 160px;
+        }
+        &_contents {
+          font-size: 16px;
+          font-family: "Jua", sans-serif;
+          color: #000000;
+        }
+        &_down {
+          font-size: 16px;
+          font-family: "Jua", sans-serif;
+          color: #f6b93b;
+          margin-left: 100px;
+        }
+      }
+      &_number {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+        &_title {
+          font-size: 32px;
+          font-family: "Jua", sans-serif;
+          color: #ffe695;
+          margin-right: 180px;
+          margin-left: 140px;
+        }
+        &_contents {
+          font-size: 16px;
+          font-family: "Jua", sans-serif;
+          color: #000000;
+        }
+      }
+      &_saveNumber {
+        display: flex;
+        align-items: center;
+        margin-bottom: 124px;
+        &_title {
+          font-size: 32px;
+          font-family: "Jua", sans-serif;
+          color: #78e08f;
+          margin-right: 230px;
+          margin-left: 160px;
+        }
+        &_contents {
+          font-size: 16px;
+          font-family: "Jua", sans-serif;
+          color: #000000;
+        }
+      }
+    }
+
+    &_contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      &_descriptionOne {
+        font-size: 16px;
+        color: #5bc8d3;
+        font-family: "Jua", sans-serif;
+      }
+      &_github {
+        margin-left: 80px;
+      }
+      &_mail {
+        margin-left: 80px;
+      }
+      &_facebook {
+        margin-left: 80px;
+      }
+
+      &_descriptionTwo {
+        margin-left: 50px;
+        font-size: 16px;
+        color: #000000;
+        font-family: "Jua", sans-serif;
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .helpView {
+    &_title {
+      display: flex;
+      font-size: 48px;
       font-family: "Jua", sans-serif;
-      margin-right: 30px;
+      color: #000000;
+      letter-spacing: 0.3rem;
+      margin: 40px 0px 70px 50px;
+      align-items: center;
+      &_image {
+        padding-top: 15px;
+        margin-left: 5px;
+      }
+      &_guide {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 30px;
+      }
+    }
+    &_contents {
+      &_oneStudent {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+        &_title {
+          font-size: 52px;
+          font-family: "Jua", sans-serif;
+          color: #70d9cc;
+          margin-right: 260px;
+          margin-left: 300px;
+        }
+        &_contents {
+          font-size: 24px;
+          font-family: "Jua", sans-serif;
+          color: #000000;
+        }
+      }
+      &_severalStudents {
+        display: flex;
+        align-items: center;
+        margin-bottom: 90px;
+        &_title {
+          font-size: 52px;
+          font-family: "Jua", sans-serif;
+          color: #aab9e3;
+          margin-right: 190px;
+          margin-left: 290px;
+        }
+        &_contents {
+          font-size: 24px;
+          font-family: "Jua", sans-serif;
+          color: #000000;
+        }
+        &_down {
+          font-size: 36px;
+          font-family: "Jua", sans-serif;
+          color: #f6b93b;
+          margin-left: 250px;
+        }
+      }
+      &_number {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+        &_title {
+          font-size: 52px;
+          font-family: "Jua", sans-serif;
+          color: #ffe695;
+          margin-right: 160px;
+          margin-left: 255px;
+        }
+        &_contents {
+          font-size: 24px;
+          font-family: "Jua", sans-serif;
+          color: #000000;
+        }
+      }
+      &_saveNumber {
+        display: flex;
+        align-items: center;
+        margin-bottom: 124px;
+        &_title {
+          font-size: 52px;
+          font-family: "Jua", sans-serif;
+          color: #78e08f;
+          margin-right: 260px;
+          margin-left: 310px;
+        }
+        &_contents {
+          font-size: 24px;
+          font-family: "Jua", sans-serif;
+          color: #000000;
+        }
+      }
+    }
+
+    &_contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      &_descriptionOne {
+        font-size: 24px;
+        color: #5bc8d3;
+        font-family: "Jua", sans-serif;
+      }
+      &_github {
+        margin-left: 80px;
+      }
+      &_mail {
+        margin-left: 80px;
+      }
+      &_facebook {
+        margin-left: 80px;
+      }
+
+      &_descriptionTwo {
+        margin-left: 50px;
+        font-size: 24px;
+        color: #000000;
+        font-family: "Jua", sans-serif;
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .helpView {
+    &_title {
+      display: flex;
+      font-size: 64px;
+      font-family: "Jua", sans-serif;
+      color: #000000;
+      letter-spacing: 0.3rem;
+      margin: 40px 0px 70px 50px;
+      align-items: center;
+      &_image {
+        padding-top: 15px;
+        margin-left: 5px;
+      }
+      &_guide {
+        font-size: 24px;
+        text-align: center;
+        margin-left: 30px;
+      }
+    }
+    &_contents {
+      &_oneStudent {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+        &_title {
+          font-size: 64px;
+          font-family: "Jua", sans-serif;
+          color: #70d9cc;
+          margin-right: 260px;
+          margin-left: 300px;
+        }
+        &_contents {
+          font-size: 36px;
+          font-family: "Jua", sans-serif;
+          color: #000000;
+        }
+      }
+      &_severalStudents {
+        display: flex;
+        align-items: center;
+        margin-bottom: 90px;
+        &_title {
+          font-size: 64px;
+          font-family: "Jua", sans-serif;
+          color: #aab9e3;
+          margin-right: 190px;
+          margin-left: 290px;
+        }
+        &_contents {
+          font-size: 36px;
+          font-family: "Jua", sans-serif;
+          color: #000000;
+        }
+        &_down {
+          font-size: 36px;
+          font-family: "Jua", sans-serif;
+          color: #f6b93b;
+          margin-left: 250px;
+        }
+      }
+      &_number {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+        &_title {
+          font-size: 64px;
+          font-family: "Jua", sans-serif;
+          color: #ffe695;
+          margin-right: 160px;
+          margin-left: 255px;
+        }
+        &_contents {
+          font-size: 36px;
+          font-family: "Jua", sans-serif;
+          color: #000000;
+        }
+      }
+      &_saveNumber {
+        display: flex;
+        align-items: center;
+        margin-bottom: 124px;
+        &_title {
+          font-size: 64px;
+          font-family: "Jua", sans-serif;
+          color: #78e08f;
+          margin-right: 260px;
+          margin-left: 310px;
+        }
+        &_contents {
+          font-size: 36px;
+          font-family: "Jua", sans-serif;
+          color: #000000;
+        }
+      }
+    }
+
+    &_contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      &_descriptionOne {
+        font-size: 36px;
+        color: #5bc8d3;
+        font-family: "Jua", sans-serif;
+      }
+      &_github {
+        margin-left: 80px;
+      }
+      &_mail {
+        margin-left: 80px;
+      }
+      &_facebook {
+        margin-left: 80px;
+      }
+
+      &_descriptionTwo {
+        margin-left: 50px;
+        font-size: 36px;
+        color: #000000;
+        font-family: "Jua", sans-serif;
+        margin-right: 30px;
+      }
     }
   }
 }

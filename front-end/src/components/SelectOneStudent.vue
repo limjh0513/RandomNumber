@@ -148,26 +148,26 @@ export default {
     letter-spacing: 0.1em;
     font-style: normal;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 32px;
     line-height: 77px;
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 24px 0 24px 215px;
+    margin: 24px 0 24px 194px;
 
     color: #000000;
 
     &_saveButton {
-      width: 135px;
-      height: 75px;
+      width: 85px;
+      height: 55px;
       background: #6ede8a;
       border-radius: 20px;
       border: none;
 
       cursor: pointer;
       letter-spacing: 0.1em;
-      font-weight: 400;
-      font-size: 36px;
+      font-weight: 300;
+      font-size: 24px;
       line-height: 43px;
       text-align: center;
 
@@ -179,13 +179,13 @@ export default {
     }
   }
   &_show {
-    height: 360px;
+    height: 80px;
     margin: 24px;
 
     font-family: "Bitter", serif;
     font-style: normal;
-    font-size: 304px;
-    line-height: 346px;
+    font-size: 108px;
+    line-height: 80px;
     text-align: center;
 
     &_wait {
@@ -203,34 +203,38 @@ export default {
     margin: 20px;
     &_inputBox {
       &_title {
-        margin-right: 710px;
+        margin-right: 660px;
         font-family: "Sunflower", sans-serif;
         font-style: normal;
-        font-weight: 550;
-        font-size: 48px;
+        font-weight: 450;
+        font-size: 32px;
         line-height: 58px;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         color: #000000;
+        margin-left: 100px;
       }
 
       &_action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &_studentInput {
-          width: 370px;
-          height: 115px;
+          width: 130px;
+          height: 80px;
 
-          font-size: 56px;
+          font-size: 32px;
           text-align: center;
 
           background: #ffffff;
           border: 1px solid #8d8d8d;
           box-sizing: border-box;
           border-radius: 20px;
-          margin-left: 240px;
+          margin-right: 80px;
         }
         &_button {
-          width: 250px;
-          height: 100px;
+          width: 130px;
+          height: 80px;
           border: none;
           background: #ff7979;
           border-radius: 15px;
@@ -247,7 +251,530 @@ export default {
 
           color: #ffffff;
 
-          margin-left: 700px;
+          margin-left: 350px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .selectOne {
+    &_title {
+      font-family: "Sunflower", sans-serif;
+      letter-spacing: 0.1em;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 77px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: 24px 0 24px 194px;
+
+      color: #000000;
+
+      &_saveButton {
+        width: 85px;
+        height: 55px;
+        background: #6ede8a;
+        border-radius: 20px;
+        border: none;
+
+        cursor: pointer;
+        letter-spacing: 0.1em;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 43px;
+        text-align: center;
+
+        font-family: "Jua", sans-serif;
+
+        margin-left: 80px;
+
+        color: #ffffff;
+      }
+    }
+    &_show {
+      height: 110px;
+      margin: 24px;
+
+      font-family: "Bitter", serif;
+      font-style: normal;
+      font-size: 108px;
+      line-height: 100px;
+      text-align: center;
+
+      &_wait {
+        color: #70d6ff;
+      }
+      &_students {
+        color: #eb4d4b;
+      }
+    }
+
+    &_input {
+      display: flex;
+      align-items: center;
+
+      margin: 20px;
+      &_inputBox {
+        &_title {
+          font-family: "Sunflower", sans-serif;
+          font-style: normal;
+          font-weight: 450;
+          font-size: 28px;
+          line-height: 30px;
+          text-align: center;
+          color: #000000;
+          margin-left: 140px;
+        }
+
+        &_action {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &_studentInput {
+            width: 180px;
+            height: 80px;
+
+            font-size: 32px;
+            text-align: center;
+
+            background: #ffffff;
+            border: 1px solid #8d8d8d;
+            box-sizing: border-box;
+            border-radius: 20px;
+
+            margin-left: 130px;
+          }
+          &_button {
+            width: 150px;
+            height: 80px;
+            border: none;
+            background: #ff7979;
+            border-radius: 15px;
+
+            cursor: pointer;
+
+            font-family: "Jua", sans-serif;
+            letter-spacing: 0.15em;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 48px;
+            line-height: 58px;
+            text-align: center;
+            margin-left: 420px;
+
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .selectOne {
+    &_title {
+      font-family: "Sunflower", sans-serif;
+      letter-spacing: 0.1em;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 77px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: 24px 0 24px 194px;
+
+      color: #000000;
+
+      &_saveButton {
+        width: 85px;
+        height: 55px;
+        background: #6ede8a;
+        border-radius: 20px;
+        border: none;
+
+        cursor: pointer;
+        letter-spacing: 0.1em;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 43px;
+        text-align: center;
+
+        font-family: "Jua", sans-serif;
+
+        margin-left: 80px;
+
+        color: #ffffff;
+      }
+    }
+    &_show {
+      height: 170px;
+      margin: 24px;
+
+      font-family: "Bitter", serif;
+      font-style: normal;
+      font-size: 128px;
+      line-height: 180px;
+      text-align: center;
+
+      &_wait {
+        color: #70d6ff;
+      }
+      &_students {
+        color: #eb4d4b;
+      }
+    }
+
+    &_input {
+      display: flex;
+      align-items: center;
+
+      margin: 20px;
+      &_inputBox {
+        &_title {
+          font-family: "Sunflower", sans-serif;
+          font-style: normal;
+          font-weight: 450;
+          font-size: 28px;
+          line-height: 30px;
+          text-align: center;
+          color: #000000;
+          margin-left: 150px;
+        }
+
+        &_action {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &_studentInput {
+            width: 180px;
+            height: 80px;
+
+            font-size: 32px;
+            text-align: center;
+
+            background: #ffffff;
+            border: 1px solid #8d8d8d;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-left: 180px;
+          }
+          &_button {
+            width: 150px;
+            height: 80px;
+            border: none;
+            background: #ff7979;
+            border-radius: 15px;
+
+            cursor: pointer;
+
+            font-family: "Jua", sans-serif;
+            letter-spacing: 0.15em;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 48px;
+            line-height: 58px;
+            text-align: center;
+            margin-left: 460px;
+
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .selectOne {
+    &_title {
+      font-family: "Sunflower", sans-serif;
+      letter-spacing: 0.1em;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 52px;
+      line-height: 77px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: 24px 0 24px 215px;
+      color: #000000;
+      &_saveButton {
+        width: 120px;
+        height: 75px;
+        background: #6ede8a;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+        font-family: "Jua", sans-serif;
+        margin-left: 80px;
+        color: #ffffff;
+      }
+    }
+    &_show {
+      height: 330px;
+      margin: 24px;
+      font-family: "Bitter", serif;
+      font-style: normal;
+      font-size: 240px;
+      line-height: 346px;
+      text-align: center;
+      &_wait {
+        color: #70d6ff;
+      }
+      &_students {
+        color: #eb4d4b;
+      }
+    }
+    &_input {
+      display: flex;
+      align-items: center;
+      margin: 20px;
+      &_inputBox {
+        &_title {
+          font-family: "Sunflower", sans-serif;
+          font-style: normal;
+          font-weight: 550;
+          font-size: 48px;
+          line-height: 58px;
+          text-align: center;
+          margin-bottom: 30px;
+          color: #000000;
+          margin-right: 820px;
+        }
+        &_action {
+          &_studentInput {
+            width: 300px;
+            height: 115px;
+            font-size: 56px;
+            text-align: center;
+            background: #ffffff;
+            border: 1px solid #8d8d8d;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-left: 200px;
+          }
+          &_button {
+            width: 200px;
+            height: 105px;
+            border: none;
+            background: #ff7979;
+            border-radius: 15px;
+            cursor: pointer;
+            font-family: "Jua", sans-serif;
+            letter-spacing: 0.15em;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 48px;
+            line-height: 58px;
+            text-align: center;
+            margin-left: 600px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1900px) {
+  .selectOne {
+    &_title {
+      font-family: "Sunflower", sans-serif;
+      letter-spacing: 0.1em;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 77px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: 24px 0 24px 215px;
+      color: #000000;
+      &_saveButton {
+        width: 135px;
+        height: 75px;
+        background: #6ede8a;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+        font-family: "Jua", sans-serif;
+        margin-left: 80px;
+        color: #ffffff;
+      }
+    }
+    &_show {
+      height: 360px;
+      margin: 24px;
+      font-family: "Bitter", serif;
+      font-style: normal;
+      font-size: 304px;
+      line-height: 346px;
+      text-align: center;
+      &_wait {
+        color: #70d6ff;
+      }
+      &_students {
+        color: #eb4d4b;
+      }
+    }
+    &_input {
+      display: flex;
+      align-items: center;
+      margin: 20px;
+      &_inputBox {
+        &_title {
+          margin-right: 890px;
+          font-family: "Sunflower", sans-serif;
+          font-style: normal;
+          font-weight: 550;
+          font-size: 48px;
+          line-height: 58px;
+          text-align: center;
+          margin-bottom: 30px;
+          color: #000000;
+          margin-right: 910px;
+        }
+        &_action {
+          &_studentInput {
+            width: 370px;
+            height: 115px;
+            font-size: 56px;
+            text-align: center;
+            background: #ffffff;
+            border: 1px solid #8d8d8d;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-left: 260px;
+          }
+          &_button {
+            width: 250px;
+            height: 100px;
+            border: none;
+            background: #ff7979;
+            border-radius: 15px;
+            cursor: pointer;
+            font-family: "Jua", sans-serif;
+            letter-spacing: 0.15em;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 48px;
+            line-height: 58px;
+            text-align: center;
+            color: #ffffff;
+            margin-left: 700px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 2130px) {
+  .selectOne {
+    &_title {
+      font-family: "Sunflower", sans-serif;
+      letter-spacing: 0.1em;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 77px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: 24px 0 24px 215px;
+      color: #000000;
+      &_saveButton {
+        width: 135px;
+        height: 75px;
+        background: #6ede8a;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+        font-family: "Jua", sans-serif;
+        margin-left: 80px;
+        color: #ffffff;
+      }
+    }
+    &_show {
+      height: 450px;
+      margin: 24px;
+      font-family: "Bitter", serif;
+      font-style: normal;
+      font-size: 304px;
+      line-height: 346px;
+      text-align: center;
+      &_wait {
+        color: #70d6ff;
+      }
+      &_students {
+        color: #eb4d4b;
+      }
+    }
+    &_input {
+      display: flex;
+      align-items: center;
+      margin: 20px;
+      &_inputBox {
+        &_title {
+          margin-right: 980px;
+          font-family: "Sunflower", sans-serif;
+          font-style: normal;
+          font-weight: 550;
+          font-size: 48px;
+          line-height: 58px;
+          text-align: center;
+          margin-bottom: 30px;
+          color: #000000;
+        }
+        &_action {
+          &_studentInput {
+            width: 370px;
+            height: 115px;
+            font-size: 56px;
+            text-align: center;
+            background: #ffffff;
+            border: 1px solid #8d8d8d;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-left: 240px;
+          }
+          &_button {
+            width: 250px;
+            height: 100px;
+            border: none;
+            background: #ff7979;
+            border-radius: 15px;
+            cursor: pointer;
+            font-family: "Jua", sans-serif;
+            letter-spacing: 0.15em;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 48px;
+            line-height: 58px;
+            text-align: center;
+            color: #ffffff;
+            margin-left: 800px;
+          }
         }
       }
     }

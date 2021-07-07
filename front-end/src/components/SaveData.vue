@@ -120,122 +120,249 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 
-.save {
-  margin-top: 50px;
-  &_noneItem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (min-width: 100px) {
+  .save {
+    margin-top: 50px;
+    &_noneItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    font-size: 72px;
-    color: #00d2d3;
-    text-align: center;
+      font-size: 72px;
+      color: #00d2d3;
+      text-align: center;
 
-    font-family: "Jua", sans-serif;
-  }
-
-  &_list {
-    margin: 0 auto;
-
-    &_deleteAll {
-      list-style: none;
-      &_button {
-        cursor: pointer;
-        width: 60%;
-        height: 75px;
-        background: #ff7675;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0px auto;
-        margin-bottom: 30px;
-        border-radius: 30px;
-        font-family: "Jua", sans-serif;
-        font-size: 54px;
-        padding: 10px;
-        color: #fefefe;
-        border: none;
-      }
+      font-family: "Jua", sans-serif;
     }
 
-    &_item {
-      margin-left: 70px;
-      background: #f9f9f9;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      width: 90%;
-      height: 220px;
-      margin-bottom: 60px;
-      &_contents {
-        width: 175px;
-        margin: 50px 100px 50px 80px;
+    &_list {
+      margin: 0 auto;
+
+      &_deleteAll {
+        list-style: none;
+        &_button {
+          cursor: pointer;
+          width: 60%;
+          height: 75px;
+          background: #ff7675;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0px auto;
+          margin-bottom: 30px;
+          border-radius: 30px;
+          font-family: "Jua", sans-serif;
+          font-size: 54px;
+          padding: 10px;
+          color: #fefefe;
+          border: none;
+        }
+      }
+
+      &_item {
+        margin-left: 70px;
+        background: #f9f9f9;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        display: flex;
         align-items: center;
-        &_title {
-          font-family: Yu Gothic UI;
+        width: 90%;
+        height: 220px;
+        margin-bottom: 60px;
+        &_contents {
+          width: 175px;
+          margin: 50px 100px 50px 80px;
+          align-items: center;
+          &_title {
+            font-family: Yu Gothic UI;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            padding-bottom: 15px;
+
+            color: #000000;
+          }
+          &_time {
+            font-family: Yu Gothic UI;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            /* identical to box height */
+
+            padding-bottom: 15px;
+
+            color: #575757;
+          }
+          &_mode {
+            font-family: Yu Gothic UI;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+
+            color: #007fff;
+          }
+        }
+        &_students {
+          width: 1100px;
+          font-family: Tomorrow;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 64px;
+          line-height: 120px;
+          text-align: start;
+          font-family: "Bitter", serif;
+          color: #70d6ff;
+          overflow-y: scroll;
+          height: 180px;
+          margin-right: 50px;
+          word-spacing: 1em;
+        }
+        &_deleteButton {
+          width: 105px;
+          height: 75px;
+          border: none;
+          background: #ff595e;
+          cursor: pointer;
+          border-radius: 20px;
+
+          font-family: Tomorrow;
           font-style: normal;
           font-weight: 600;
           font-size: 24px;
-          line-height: 32px;
+          line-height: 43px;
           text-align: center;
-          padding-bottom: 15px;
 
-          color: #000000;
-        }
-        &_time {
-          font-family: Yu Gothic UI;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 24px;
-          line-height: 32px;
-          /* identical to box height */
+          margin-right: 30px;
 
-          padding-bottom: 15px;
-
-          color: #575757;
-        }
-        &_mode {
-          font-family: Yu Gothic UI;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 24px;
-          line-height: 32px;
-
-          color: #007fff;
+          color: #ffffff;
         }
       }
-      &_students {
-        width: 1100px;
-        font-family: Tomorrow;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 64px;
-        line-height: 120px;
-        text-align: start;
-        font-family: "Bitter", serif;
-        color: #70d6ff;
-        overflow-y: scroll;
-        height: 180px;
-        margin-right: 50px;
-        word-spacing: 1em;
+    }
+  }
+}
+
+@media (min-width: 1900px) {
+  .save {
+    margin-top: 50px;
+    &_noneItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 72px;
+      color: #00d2d3;
+      text-align: center;
+
+      font-family: "Jua", sans-serif;
+    }
+
+    &_list {
+      margin: 0 auto;
+
+      &_deleteAll {
+        list-style: none;
+        &_button {
+          cursor: pointer;
+          width: 60%;
+          height: 75px;
+          background: #ff7675;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0px auto;
+          margin-bottom: 30px;
+          border-radius: 30px;
+          font-family: "Jua", sans-serif;
+          font-size: 54px;
+          padding: 10px;
+          color: #fefefe;
+          border: none;
+        }
       }
-      &_deleteButton {
-        width: 135px;
-        height: 75px;
-        border: none;
-        background: #ff595e;
-        cursor: pointer;
-        border-radius: 20px;
 
-        font-family: Tomorrow;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 43px;
-        text-align: center;
+      &_item {
+        margin-left: 70px;
+        background: #f9f9f9;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        width: 90%;
+        height: 220px;
+        margin-bottom: 60px;
+        &_contents {
+          width: 175px;
+          margin: 50px 100px 50px 80px;
+          align-items: center;
+          &_title {
+            font-family: Yu Gothic UI;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            padding-bottom: 15px;
 
-        color: #ffffff;
+            color: #000000;
+          }
+          &_time {
+            font-family: Yu Gothic UI;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            /* identical to box height */
+
+            padding-bottom: 15px;
+
+            color: #575757;
+          }
+          &_mode {
+            font-family: Yu Gothic UI;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+
+            color: #007fff;
+          }
+        }
+        &_students {
+          width: 1100px;
+          font-family: Tomorrow;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 64px;
+          line-height: 120px;
+          text-align: start;
+          font-family: "Bitter", serif;
+          color: #70d6ff;
+          overflow-y: scroll;
+          height: 180px;
+          margin-right: 50px;
+          word-spacing: 1em;
+        }
+        &_deleteButton {
+          width: 135px;
+          height: 75px;
+          border: none;
+          background: #ff595e;
+          cursor: pointer;
+          border-radius: 20px;
+
+          font-family: Tomorrow;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 36px;
+          line-height: 43px;
+          text-align: center;
+
+          color: #ffffff;
+        }
       }
     }
   }

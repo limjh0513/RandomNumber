@@ -211,7 +211,7 @@ export default {
     letter-spacing: 0.1em;
     font-style: normal;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 48px;
     line-height: 77px;
     align-items: center;
     display: flex;
@@ -243,14 +243,14 @@ export default {
     }
   }
   &_show {
-    height: 360px;
+    height: 160px;
     margin: 24px;
     padding: 15px;
 
     font-family: "Bitter", serif;
     font-style: normal;
 
-    line-height: 150px;
+    line-height: 130px;
     text-align: center;
 
     word-spacing: 5rem;
@@ -263,7 +263,7 @@ export default {
     }
     &_wait {
       color: #70d6ff;
-      font-size: 200px;
+      font-size: 180px;
     }
   }
 
@@ -280,36 +280,33 @@ export default {
           font-family: "Sunflower", sans-serif;
           font-style: normal;
           font-weight: 550;
-          font-size: 48px;
-          line-height: 58px;
+          font-size: 24px;
           text-align: center;
           margin-bottom: 30px;
           color: #000000;
-          margin-left: 200px;
+          margin-left: 100px;
         }
 
         &_announStudents {
           font-family: "Sunflower", sans-serif;
           font-style: normal;
           font-weight: 550;
-          font-size: 48px;
-          line-height: 58px;
+          font-size: 24px;
           text-align: center;
           margin-bottom: 30px;
           color: #000000;
-          margin-left: 350px;
+          margin-left: 140px;
         }
 
         &_overlap {
           font-family: "Sunflower", sans-serif;
           font-style: normal;
           font-weight: 550;
-          font-size: 48px;
-          line-height: 58px;
+          font-size: 24px;
           text-align: center;
           margin-bottom: 30px;
           color: #000000;
-          margin-left: 250px;
+          margin-left: 140px;
           letter-spacing: 0.05em;
         }
       }
@@ -319,43 +316,42 @@ export default {
         align-items: center;
 
         &_studentInput {
-          width: 370px;
-          height: 115px;
+          width: 120px;
+          height: 80px;
 
-          font-size: 56px;
+          font-size: 20px;
           text-align: center;
 
           background: #ffffff;
           border: 1px solid #8d8d8d;
           box-sizing: border-box;
           border-radius: 20px;
-          margin-right: 200px;
-          margin-left: 80px;
+          margin-left: 70px;
         }
 
         &_selectCountInput {
-          width: 370px;
-          height: 115px;
+          width: 120px;
+          height: 80px;
 
-          font-size: 56px;
+          font-size: 20px;
           text-align: center;
 
           background: #ffffff;
           border: 1px solid #8d8d8d;
           box-sizing: border-box;
           border-radius: 20px;
-          margin-right: 200px;
+          margin-left: 130px;
         }
 
         &_overlapInput {
-          width: 100px;
-          height: 100px;
-          margin-right: 200px;
+          width: 50px;
+          height: 50px;
+          margin-left: 153px;
         }
 
         &_button {
-          width: 250px;
-          height: 100px;
+          width: 120px;
+          height: 80px;
           border: none;
           background: #ff7979;
           border-radius: 15px;
@@ -366,11 +362,702 @@ export default {
           letter-spacing: 0.15em;
           font-style: normal;
           font-weight: 300;
-          font-size: 48px;
+          font-size: 32px;
           line-height: 58px;
           text-align: center;
 
           color: #ffffff;
+
+          margin-left: 190px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .selectSeveral {
+    &_title {
+      font-family: "Sunflower", sans-serif;
+      letter-spacing: 0.1em;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 77px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      margin: 24px 0 24px 215px;
+
+      color: #000000;
+
+      &_saveButton {
+        width: 135px;
+        height: 75px;
+        background: #6ede8a;
+        border-radius: 20px;
+        border: none;
+
+        cursor: pointer;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+
+        font-family: "Jua", sans-serif;
+
+        margin-left: 80px;
+
+        color: #ffffff;
+      }
+    }
+    &_show {
+      height: 160px;
+      margin: 24px;
+      padding: 15px;
+
+      font-family: "Bitter", serif;
+      font-style: normal;
+
+      line-height: 130px;
+      text-align: center;
+
+      word-spacing: 5rem;
+
+      overflow: scroll;
+      overflow-x: hidden;
+      &_student {
+        color: #eb4d4b;
+        font-size: 80px;
+      }
+      &_wait {
+        color: #70d6ff;
+        font-size: 180px;
+      }
+    }
+
+    &_input {
+      display: flex;
+      align-items: center;
+
+      margin: 20px;
+      &_inputBox {
+        &_contents {
+          display: flex;
+
+          &_studentCount {
+            font-family: "Sunflower", sans-serif;
+            font-style: normal;
+            font-weight: 550;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000000;
+            margin-left: 120px;
+          }
+
+          &_announStudents {
+            font-family: "Sunflower", sans-serif;
+            font-style: normal;
+            font-weight: 550;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000000;
+            margin-left: 160px;
+          }
+
+          &_overlap {
+            font-family: "Sunflower", sans-serif;
+            font-style: normal;
+            font-weight: 550;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000000;
+            margin-left: 160px;
+            letter-spacing: 0.05em;
+          }
+        }
+
+        &_action {
+          display: flex;
+          align-items: center;
+
+          &_studentInput {
+            width: 160px;
+            height: 80px;
+
+            font-size: 28px;
+            text-align: center;
+
+            background: #ffffff;
+            border: 1px solid #8d8d8d;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-left: 80px;
+          }
+
+          &_selectCountInput {
+            width: 160px;
+            height: 80px;
+
+            font-size: 28px;
+            text-align: center;
+
+            background: #ffffff;
+            border: 1px solid #8d8d8d;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-left: 150px;
+          }
+
+          &_overlapInput {
+            width: 50px;
+            height: 50px;
+            margin-left: 180px;
+          }
+
+          &_button {
+            width: 140px;
+            height: 80px;
+            border: none;
+            background: #ff7979;
+            border-radius: 15px;
+
+            cursor: pointer;
+
+            font-family: "Jua", sans-serif;
+            letter-spacing: 0.15em;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 58px;
+            text-align: center;
+
+            color: #ffffff;
+
+            margin-left: 190px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .selectSeveral {
+    &_title {
+      font-family: "Sunflower", sans-serif;
+      letter-spacing: 0.1em;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 77px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      margin: 24px 0 24px 215px;
+
+      color: #000000;
+
+      &_saveButton {
+        width: 135px;
+        height: 75px;
+        background: #6ede8a;
+        border-radius: 20px;
+        border: none;
+
+        cursor: pointer;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+
+        font-family: "Jua", sans-serif;
+
+        margin-left: 80px;
+
+        color: #ffffff;
+      }
+    }
+    &_show {
+      height: 180px;
+      margin: 24px;
+      padding: 15px;
+
+      font-family: "Bitter", serif;
+      font-style: normal;
+
+      line-height: 130px;
+      text-align: center;
+
+      word-spacing: 5rem;
+
+      overflow: scroll;
+      overflow-x: hidden;
+      &_student {
+        color: #eb4d4b;
+        font-size: 80px;
+      }
+      &_wait {
+        color: #70d6ff;
+        font-size: 180px;
+      }
+    }
+
+    &_input {
+      display: flex;
+      align-items: center;
+
+      margin: 20px;
+      &_inputBox {
+        &_contents {
+          display: flex;
+
+          &_studentCount {
+            font-family: "Sunflower", sans-serif;
+            font-style: normal;
+            font-weight: 550;
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000000;
+            margin-left: 140px;
+          }
+
+          &_announStudents {
+            font-family: "Sunflower", sans-serif;
+            font-style: normal;
+            font-weight: 550;
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000000;
+            margin-left: 240px;
+          }
+
+          &_overlap {
+            font-family: "Sunflower", sans-serif;
+            font-style: normal;
+            font-weight: 550;
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000000;
+            margin-left: 200px;
+            letter-spacing: 0.05em;
+          }
+        }
+
+        &_action {
+          display: flex;
+          align-items: center;
+
+          &_studentInput {
+            width: 220px;
+            height: 115px;
+
+            font-size: 48px;
+            text-align: center;
+
+            background: #ffffff;
+            border: 1px solid #8d8d8d;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-left: 80px;
+          }
+
+          &_selectCountInput {
+            width: 220px;
+            height: 115px;
+
+            font-size: 48px;
+            text-align: center;
+
+            background: #ffffff;
+            border: 1px solid #8d8d8d;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-left: 180px;
+          }
+
+          &_overlapInput {
+            width: 60px;
+            height: 60px;
+            margin-left: 205px;
+          }
+
+          &_button {
+            width: 180px;
+            height: 100px;
+            border: none;
+            background: #ff7979;
+            border-radius: 15px;
+
+            cursor: pointer;
+
+            font-family: "Jua", sans-serif;
+            letter-spacing: 0.15em;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 48px;
+            line-height: 58px;
+            text-align: center;
+
+            color: #ffffff;
+
+            margin-left: 210px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .selectSeveral {
+    &_title {
+      font-family: "Sunflower", sans-serif;
+      letter-spacing: 0.1em;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 77px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      margin: 24px 0 24px 215px;
+
+      color: #000000;
+
+      &_saveButton {
+        width: 135px;
+        height: 75px;
+        background: #6ede8a;
+        border-radius: 20px;
+        border: none;
+
+        cursor: pointer;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+
+        font-family: "Jua", sans-serif;
+
+        margin-left: 80px;
+
+        color: #ffffff;
+      }
+    }
+    &_show {
+      height: 270px;
+      margin: 24px;
+      padding: 15px;
+
+      font-family: "Bitter", serif;
+      font-style: normal;
+
+      line-height: 130px;
+      text-align: center;
+
+      word-spacing: 5rem;
+
+      overflow: scroll;
+      overflow-x: hidden;
+      &_student {
+        color: #eb4d4b;
+        font-size: 80px;
+      }
+      &_wait {
+        color: #70d6ff;
+        font-size: 180px;
+      }
+    }
+
+    &_input {
+      display: flex;
+      align-items: center;
+
+      margin: 20px;
+      &_inputBox {
+        &_contents {
+          display: flex;
+
+          &_studentCount {
+            font-family: "Sunflower", sans-serif;
+            font-style: normal;
+            font-weight: 550;
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000000;
+            margin-left: 150px;
+          }
+
+          &_announStudents {
+            font-family: "Sunflower", sans-serif;
+            font-style: normal;
+            font-weight: 550;
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000000;
+            margin-left: 240px;
+          }
+
+          &_overlap {
+            font-family: "Sunflower", sans-serif;
+            font-style: normal;
+            font-weight: 550;
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000000;
+            margin-left: 200px;
+            letter-spacing: 0.05em;
+          }
+        }
+
+        &_action {
+          display: flex;
+          align-items: center;
+
+          &_studentInput {
+            width: 260px;
+            height: 115px;
+
+            font-size: 48px;
+            text-align: center;
+
+            background: #ffffff;
+            border: 1px solid #8d8d8d;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-left: 80px;
+          }
+
+          &_selectCountInput {
+            width: 260px;
+            height: 115px;
+
+            font-size: 48px;
+            text-align: center;
+
+            background: #ffffff;
+            border: 1px solid #8d8d8d;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-left: 210px;
+          }
+
+          &_overlapInput {
+            width: 80px;
+            height: 80px;
+            margin-left: 215px;
+          }
+
+          &_button {
+            width: 200px;
+            height: 100px;
+            border: none;
+            background: #ff7979;
+            border-radius: 15px;
+
+            cursor: pointer;
+
+            font-family: "Jua", sans-serif;
+            letter-spacing: 0.15em;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 48px;
+            line-height: 58px;
+            text-align: center;
+
+            color: #ffffff;
+
+            margin-left: 230px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1900px) {
+  .selectSeveral {
+    &_title {
+      font-family: "Sunflower", sans-serif;
+      letter-spacing: 0.1em;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 77px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      margin: 24px 0 24px 215px;
+
+      color: #000000;
+
+      &_saveButton {
+        width: 135px;
+        height: 75px;
+        background: #6ede8a;
+        border-radius: 20px;
+        border: none;
+
+        cursor: pointer;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+
+        font-family: "Jua", sans-serif;
+
+        margin-left: 80px;
+
+        color: #ffffff;
+      }
+    }
+    &_show {
+      height: 360px;
+      margin: 24px;
+      padding: 15px;
+
+      font-family: "Bitter", serif;
+      font-style: normal;
+
+      line-height: 150px;
+      text-align: center;
+
+      word-spacing: 5rem;
+
+      overflow: scroll;
+      overflow-x: hidden;
+      &_student {
+        color: #eb4d4b;
+        font-size: 80px;
+      }
+      &_wait {
+        color: #70d6ff;
+        font-size: 200px;
+      }
+    }
+
+    &_input {
+      display: flex;
+      align-items: center;
+
+      margin: 20px;
+      &_inputBox {
+        &_contents {
+          display: flex;
+
+          &_studentCount {
+            font-family: "Sunflower", sans-serif;
+            font-style: normal;
+            font-weight: 550;
+            font-size: 48px;
+            line-height: 58px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000000;
+            margin-left: 200px;
+          }
+
+          &_announStudents {
+            font-family: "Sunflower", sans-serif;
+            font-style: normal;
+            font-weight: 550;
+            font-size: 48px;
+            line-height: 58px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000000;
+            margin-left: 350px;
+          }
+
+          &_overlap {
+            font-family: "Sunflower", sans-serif;
+            font-style: normal;
+            font-weight: 550;
+            font-size: 48px;
+            line-height: 58px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000000;
+            margin-left: 250px;
+            letter-spacing: 0.05em;
+          }
+        }
+
+        &_action {
+          display: flex;
+          align-items: center;
+
+          &_studentInput {
+            width: 370px;
+            height: 115px;
+
+            font-size: 56px;
+            text-align: center;
+
+            background: #ffffff;
+            border: 1px solid #8d8d8d;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-left: 80px;
+          }
+
+          &_selectCountInput {
+            width: 370px;
+            height: 115px;
+
+            font-size: 56px;
+            text-align: center;
+
+            background: #ffffff;
+            border: 1px solid #8d8d8d;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-left: 190px;
+          }
+
+          &_overlapInput {
+            width: 100px;
+            height: 100px;
+            margin-left: 210px;
+          }
+
+          &_button {
+            width: 250px;
+            height: 100px;
+            border: none;
+            background: #ff7979;
+            border-radius: 15px;
+
+            cursor: pointer;
+
+            font-family: "Jua", sans-serif;
+            letter-spacing: 0.15em;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 48px;
+            line-height: 58px;
+            text-align: center;
+
+            color: #ffffff;
+          }
         }
       }
     }
